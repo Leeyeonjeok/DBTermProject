@@ -13,8 +13,17 @@
     <div class="wrapper">
         <div class="title"><h1 style="font-size: 21px;">회원가입</h1></div>
         <div class="email">
-            <input id="email" type="text" placeholder="이메일을 입력해 주세요.">
+            <input id="email" type="text" placeholder="이메일을 입력해 주세요." oninput="changeEmail()">
             <div id="emailError" class="error"></div>
+        </div>
+        <div class="auth">
+            <div id="certificationNumber">000000</div>
+            <button disabled id="sendMessage" onclick="getToken()">인증번호 전송</button>
+        </div>
+
+        <div class="timer">
+            <div id="timeLimit">03:00</div>
+            <button disabled id="completion" onclick="checkCompletion()">인증확인</button>
         </div>
         <div class="name">
             <input id="name"  type="text" placeholder="이름을 입력해 주세요.">
@@ -32,16 +41,6 @@
             <input id="phone1" type="text" size="1" maxlength="3" oninput="changePhone1()"> -
             <input id="phone2" type="text" size="3" maxlength="4" oninput="changePhone2()"> -
             <input id="phone3" type="text" size="3" maxlength="4" oninput="changePhone3()">
-
-        </div>
-        <div class="auth">
-            <div id="certificationNumber">000000</div>
-            <button disabled id="sendMessage" onclick="getToken()">인증번호 전송</button>
-        </div>
-
-        <div class="timer">
-            <div id="timeLimit">03:00</div>
-            <button disabled id="completion" onclick="checkCompletion()">인증확인</button>
         </div>
         <div class="area">
             <select id="area">
@@ -62,7 +61,7 @@
             <hr>
         </div>
         <div class="signUp">
-            <button id="signUpButton" disabled onclick="signUpCheck()">가입하기</button>
+            <button id="signUpButton" disabled onclick="signUpCheck()"><a href="main.html">가입하기</a></button>
         </div>
     </div>
 

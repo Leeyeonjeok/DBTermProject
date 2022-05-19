@@ -14,11 +14,14 @@ function changePhone2(){
 }
 function changePhone3(){
     const phone3 = document.getElementById("phone3").value // 010
-    if(phone3.length === 4){
-      document.getElementById("sendMessage").focus();
-      document.getElementById("sendMessage").setAttribute("style","background-color:yellow;")
-      document.getElementById("sendMessage").disabled = false;
-    }
+}
+function changeEmail(){
+    const email = document.getElementById("email").value
+    if(email.length < 40){
+     document.getElementById("sendMessage").focus();
+     document.getElementById("sendMessage").setAttribute("style","background-color:yellow;")
+     document.getElementById("sendMessage").disabled = false;
+  }
 }
 
 // 문자인증+타이머 부분
