@@ -8,7 +8,7 @@
 </head>
 
 <body bgcolor="#f6f6f6">
-	<div class="header"><h2>OXmole</h2></div>
+	<div class="header"><h2>글쓰기</h2></div>
     <nav>
         <ul>
             <li class="dropdown">
@@ -18,7 +18,7 @@
                     <a href="sinchon.html">신촌</a>
                     <a href="danwall.html">단월</a>
                     <a href="mosiraedom.html">모시래기숙사</a>
-					          <a href="haeorumdom.html">해오름기숙사</a>
+					<a href="haeorumdom.html">해오름기숙사</a>
                 </div>
             </li>
             <li class="dropdown">
@@ -27,7 +27,7 @@
                     <a href="#">중고물품</a>
                     <a href="#">종합신고</a>
                     <a href="#">채팅목록</a>
-                    <a href="#">관심목록</a>
+                    <a href="#"></a>
                 </div>
             </li>
             <li class="dropdown">
@@ -39,33 +39,39 @@
                     <a href="#">개인정보 삭제</a>
                 </div>
             </li>
-            <li class="home"><a href="write.html">작성하기</a></li>
             <li class="home"><a href="main.html">Home</a></li>
         </ul>
     </nav>
     <div id="jb-container">
-      <div id="jb-header">
-        <h1>무엇을 도와드릴까요?</h1>
-      </div>
-      <div id="jb-content">
-        <h2>글과 사진이 첨부된 글</h2>
-        <p>그것을 구상해보자</p>
-      </div>
-      <div id="jb-sidebar">
-        <h2>사진이 없는 글</h2>
-        <ul>
-          <li>i sell this shoes.</li>
-          <li>i want to buy this shirts.</li>
-          <li>please give me a dollar.</li>
-		      <li>please give me a dollar.</li>
-		      <li>please give me a dollar.</li>
-		      <li>please give me a dollar.</li>
-		      <li>please give me a dollar.</li>
-        </ul>
-      </div>
-      <div id="jb-footer">
-        <p>아래엔 연락처가 써있다!</p>
-      </div>
+        <div id="jb-header">
+            <form method = "get" action = "#">
+                <center>
+                    <table class = "table2">
+                        <tr>
+                            <td>작성자</td>
+                            <td><input type = text name = name size=20> </td>
+                        </tr>
+
+                        <tr>
+                            <td>제목</td>
+                            <td><input type = text name = title size=60></td>
+                        </tr>
+
+                        <tr>
+                            <td>내용</td>
+                            <td><textarea name = content cols=85 rows=15></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td>비밀번호</td>
+                            <td><input type = password name = pw size=10 maxlength=10></td>
+                        </tr>
+                    </table>
+                    
+                    <input type = "submit" value="작성">
+                </center>
+            </form>
+        </div>
     </div>
 	<section class="footer">
       <div class="social">
